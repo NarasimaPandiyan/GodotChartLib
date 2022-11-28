@@ -1,4 +1,4 @@
-# Godot-2D-Super-Chart
+# A Graph Library for GODOT.
 Draggable and zoomable line chart plugin
 
 At present, it has only been tested on the win system. If there is a need later, touch screen support will be added.
