@@ -1,23 +1,23 @@
 # Godot-2D-Super-Chart
-可拖拽和缩放的折线图插件
+Draggable and zoomable line chart plugin
 
-目前只在win系统上测试过，后面有需求的话再加触屏支持。
+At present, it has only been tested on the win system. If there is a need later, touch screen support will be added.
 
-你也可以自己加触屏支持，只需合理调用move_pivot和change_zoom两个函数就行。
+You can also add touch screen support yourself, just call the two functions move_pivot and change_zoom reasonably.
 
-## 安装和使用
-1. 只需要把addons文件夹里的内容拷贝到你的项目
-2. 实例化SuperChart文件夹下的SuperChart.tscn场景
-3. 调整场景实例的参数（当然你也可以不调整）
-4. 在代码里调用场景实例的read_data或read_file方法来读取原始数据
-5. 在代码里调用场景实例的init_all方法来初始化图表
+## Install and use
+1. Just copy the contents of the addons folder to your project
+2. Instantiate the SuperChart.tscn scene under the SuperChart folder
+3. Adjust the parameters of the scene instance (of course, you can also not adjust)
+4. Call the read_data or read_file method of the scene instance in the code to read the original data
+5. Call the init_all method of the scene instance in the code to initialize the chart
 
-## 说明
-- 这是专供大数据量、无法在一个屏幕内显示完全的 **折线图** 的，至于饼图、散点图，请找其他插件
-- 仓库项目还有个Demo文件夹，里面有个Demo.tscn场景，以供参考
-- 使用read_file读取文件时，请根据你自己的分隔符去修改图表的element_delimiter属性
-- 使用read_file读取文件时，每一行的末尾表示这一条线的名称
-- 更多内容可以自己试试
+## illustrate
+- This is specially designed for a large amount of data that cannot display a complete **line chart** on one screen. As for pie charts and scatter charts, please find other plug-ins
+- The warehouse project also has a Demo folder, which contains a Demo.tscn scene for reference
+- When using read_file to read a file, please modify the element_delimiter attribute of the chart according to your own delimiter
+- When using read_file to read a file, the end of each line indicates the name of this line
+- You can try more content yourself
 
 ![图1](./Demo/1.png)
 
