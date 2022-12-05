@@ -24,14 +24,14 @@ export (String) var element_delimiter := ","
 
 export (String, "\\n") var row_delimiter := "\\n"
 
-export (float, 10.0, 1000.0) var interval_column := 200.0
+export (float, 10.0, 1000.0) var interval_column := 80.0
 
 export (float, 0.0, 10.0) var line_width = 4.0
 export (Vector2) var point_size = Vector2(20, 20)
 
 export (PoolColorArray) var pool_point_color := PoolColorArray([Color.blue, Color.green, Color.orange])
 export (PoolColorArray) var pool_line_color := PoolColorArray([Color.darkblue, Color.darkgreen, Color.darkorange])
-export (PoolStringArray) var pool_point_type := PoolStringArray(["circle", "rect", "triangle"])
+export (PoolStringArray) var pool_point_type := PoolStringArray(["circle"])
 
 export (float) var position_top := 200.0
 export (float) var position_bottom := -200.0
@@ -61,7 +61,7 @@ export (Font) var font_view_data_content = Control.new().get_font("font")
 var focusing_point : SuperChartDataPoint
 
 var viewing_point : SuperChartDataPoint
-var dragging := false
+export var dragging := false
 
 var scene_line_title : PackedScene = preload("res://addons/DrunkBull.SuperChart/src/main/LineTitle/LineTitle.tscn")
 
