@@ -123,6 +123,7 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="LineTitle" parent="VBoxContainer/HBoxContainer2/ContainerLineTitle/ScrollContainer/ListLineTitle" instance=ExtResource( 5 )]
+alignment = 1
 
 [node name="VSeparator" type="VSeparator" parent="VBoxContainer/HBoxContainer2"]
 margin_left = 104.0
