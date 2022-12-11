@@ -85,7 +85,7 @@ var chart_view_rect := Rect2()
 var mouse_pos_in_chart := Vector2()
 
 var zoom := 1.0
-var pivot := Vector2()
+var pivot := Vector2(400,0)
 
 func _input(event):
 	if event is InputEventMouseButton:

@@ -33,7 +33,7 @@ var rect_point := Rect2()
 func _draw():
 	if is_in_view:
 		var _zoomed_point_size = point_size * super_chart.zoom
-		rect_point = Rect2(position_in_view - _zoomed_point_size / 2, _zoomed_point_size)
+		rect_point = Rect2((position_in_view - _zoomed_point_size / 2), _zoomed_point_size)
 		var draw_low_alpha : bool = (
 			(is_instance_valid(super_chart.focusing_point) && super_chart.focusing_point != self) || 
 			(is_instance_valid(super_chart.viewing_point)  && super_chart.viewing_point  != self)

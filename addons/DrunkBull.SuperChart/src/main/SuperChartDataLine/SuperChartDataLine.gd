@@ -45,7 +45,7 @@ func _ready():
 #	pass
 
 func init_data_line(
-		_super_chart,
+		_super_chart, 
 		_line_index : int, 
 		_data : Array, 
 		_line_width : float, 
