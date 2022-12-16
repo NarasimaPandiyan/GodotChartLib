@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://addons/DrunkBull.SuperChart/src/main/SuperChart/SuperChart.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Demo/Demo.gd" type="Script" id=2]
@@ -16,6 +16,11 @@ font_data = ExtResource( 3 )
 
 [sub_resource type="DynamicFont" id=4]
 size = 20
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 26
+outline_size = 1
 font_data = ExtResource( 3 )
 
 [node name="Demo" type="Control"]
@@ -40,3 +45,13 @@ font_view_data_content = SubResource( 3 )
 [node name="LabelFPS" type="Label" parent="."]
 margin_right = 40.0
 margin_bottom = 14.0
+
+[node name="Button" type="Button" parent="."]
+margin_left = 17.0
+margin_top = 513.0
+margin_right = 76.0
+margin_bottom = 572.0
+custom_fonts/font = SubResource( 5 )
+text = "—"
+
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
